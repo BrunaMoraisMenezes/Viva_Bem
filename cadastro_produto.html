@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Cadastro de Produtos</title>
+	<link rel="stylesheet" href="css/estilo_funcionario.css">
+</head>
+<body link=black alink='green' vlink='black' Onload="inicio()">
+	<div class="container">
+		<div class="navbar">
+			<a href="home_produto.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="lista.php"id="lista"><img src='imagens/lista.png' alt='editar' height='60' width='60' class='right'></a></li>
+					<li><a href="cadastro_produto.html"id="cadastro_produto"><img src='imagens/adicionar.png' alt='cadastro' height='60' width='60' class='right'></a></li>
+					<li><a href="lista_excluir.php"id="excluir_produto"><img src='imagens/excluir.png' alt='excluir' height='70' width='70' class='right'></a></li>
+					<li><a href="lista_editar.php"id="editar_produto"><img src='imagens/editar_produto.png' alt='editar' height='60' width='60' class='right'></a></li>
+					<li><a href="login.html"id="Loginicone"><img src='imagens/loginicone.png' alt='login' height='60' width='60' class='right'></a></li> 
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+    <center>
+        <div class="container">
+            <div class="coluna-1">
+                <br><br><br><br><br><br><h2><font color="#602d8f">CADASTRO DE PRODUTOS</font></h2>
+            <form name= "form_cadastro" method="POST" >     
+            <fieldset style='width: 47.5%;'>
+                <legend align="center"><h3>PREENCHA TODOS OS CAMPOS:</h3>  </legend>
+                <br><p>
+                GTIN: <br>
+                <input type='text' name="txt_gtin" size='20' maxlength='13' id="gtin"> 
+                <p><br>
+                NOME: <br>
+                <input type='text'  name='txt_nome' size='45' maxlength='45' id="nome">
+                <p><br>
+                INSTRUCOES: <br>
+                <input type='text' name='txt_instrucoes' size='45' maxlength='45' id="instrucoes"> 
+                <p><br>
+                DOSAGEM: <br>
+                <input type='text' name='txt_dosagem' size='20' maxlength='20' id="dosagem"> 
+                <p><br>
+                PRECO: <br>
+                <input type='text' name='txt_preco' size='20' maxlength='20' id="preco"> 
+                <p><br>
+                QUANTIDADE: <br>
+                <input type='text' name='txt_quantidade' size='20' maxlength='20' id="quantidade"> 
+                <p><br>
+                <input type='submit' name='btn_cadastrar' value='CADASTRAR' id="btn_cadastrar" onClick="document.form_cadastro.action='cadastrar.php'">
+                <input type='submit' name='btn_limpar' value="LIMPAR" id="btn_limpar" onClick="Limpar()"> 
+                <p>
+                <a href="\Viva_Bem\lista.php"><h4>  LISTA DE PRODUTOS CADASTRADOS </h4></a>
+            </fieldset>
+            </form>
+            </center>
+        </div>
+    </div>
+</div>
+<div class="social-links"></div>
+</div>
+
+</body>
+</html>

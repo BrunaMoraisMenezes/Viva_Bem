@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:#602d8f;
+	position: absolute;
+	height: 10%;
+	right: 0%;
+    overflow: hidden;
+}
+
+.logo{
+    width: 280px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: #5fba51;
+}
+
+input[type="number"]{
+    height: 35px;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#produto27, #produto28, #produto29, #produto30, #produto31, #produto32, #produto33, #produto34,
+#produto35, #produto36, #produto37, #produto38, #produto39, #produto40, #produto41, #produto42,
+#produto43, #produto44, #produto45, #produto46, #produto47, #produto48, #produto49{
+	width: 100px;
+	background: #5fba51; 
+	border-radius: 50px; 
+	padding: 1px; 
+	cursor: pointer; 
+	color: white; 
+	border: none; 
+	font-size: 12px;
+}
+
+#produto27:hover { 
+	font-size: normal;
+	background-color: #5fba51;
+	border-radius: 50px;
+	color: white;
+	box-shadow: 0 0 30px #602d8f;
+}
+
+ .social-links{
+    text-align: center;
+    background-color:#602d8f;
+	position: absolute;
+    top: 95%;
+	height: 5%;
+    width: 100%;
+	right: 0%;
+    overflow: hidden;
+ }
+
+#genericosprescricao {
+	width: 50%;
+	float: left;
+	height: 62%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 6%;
+	box-shadow: 8px 8px lightgreen;
+	float: left;  
+    margin-right: 10px; 
+    margin-left:10px;
+
+}
+
+#genericossemprescricao {
+    width: 45%;
+	float: right;
+	height: 61%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 6%;
+	box-shadow: 8px 8px lightgreen;
+	float: right;  
+    margin-right: 0px; 
+	
+}

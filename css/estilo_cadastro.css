@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:#602d8f;
+	position: absolute;
+	height: 10%;
+	right: 0%;
+    overflow: hidden;
+}
+
+.logo{
+    width: 280px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: #5fba51;
+}
+
+#cadastrocli
+{
+	font-size: 15px;
+	width: 60%;
+	height: 76%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 5%;
+	box-shadow: 8px 8px lightgreen;
+	line-height: 2.5;
+    background: #e6e1e1;
+
+}
+
+.social-links{
+    text-align: center;
+    background-color:#602d8f;
+	position: absolute;
+    top: 95%;
+	height: 5%;
+    width: 100%;
+	right: 0%;
+    overflow: hidden;
+ }
+
+form,
+table,
+fieldset
+{
+	font-size: 25px;
+}
+
+
+#nome{ 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#nome:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+
+#cel { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#cel:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#rua { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#rua:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#bairro { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#bairro:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#cep { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#cep:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+
+#txtEmail { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#txtEmail:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#txtSenha
+{ 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#txtSenha:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#txtCPF
+{ 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#txtCPF:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#cidade { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#cidade:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+	font-size: 15px;
+}
+
+#btnLimpar {
+	width: 140px;
+    height: 80px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 20px;
+}
+
+#btnEnviar {
+	width: 140px;
+    height: 80px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#circulo {
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}

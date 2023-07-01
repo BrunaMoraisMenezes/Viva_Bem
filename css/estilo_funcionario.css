@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #602d8f;
+    position: absolute;
+    height: 10%;
+    right: 0%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 280px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: #5fba51;
+}
+
+#gtin {
+    background-color: white;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#gtin:hover {
+    background-color: #ecdaea;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#nome {
+    background-color: white;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#nome:hover {
+    background-color: #ecdaea;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#instrucoes {
+    background-color: white;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#instrucoes:hover {
+    background-color: #ecdaea;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#dosagem {
+    background-color: white;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#dosagem:hover {
+    background-color: #ecdaea;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#preco {
+    background-color: white;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#preco:hover {
+    background-color: #ecdaea;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#quantidade {
+    background-color: white;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#quantidade:hover {
+    background-color: #ecdaea;
+    border-radius: 20px;
+    height: 25px;
+    border: solid 2px;
+}
+
+#txt_busca {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    border: solid 2px;
+}
+
+#txt_busca:hover {
+    background-color: #ecdaea;
+    border-radius: 20px;
+    height: 30px;
+    border: solid 2px;
+}
+
+#btn_filtrar {
+    background: #5fba51;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+#btn_filtrar:hover {
+    font-size: 20px;
+    background-color: #5fba51;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 30px #602d8f;
+}
+
+#btn_voltar {
+    background: #5fba51;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+#btn_voltar:hover {
+    font-size: 20px;
+    background-color: #5fba51;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 30px #602d8f;
+}
+
+#btn_editar {
+    background: #5fba51;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+#btn_editar:hover {
+    font-size: 20px;
+    background-color: #5fba51;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 30px #602d8f;
+}
+
+.coluna-1{
+    flex-basis: 20%;
+    position: relative;
+    top: 15%;
+}
+
+.coluna-1 h2{
+    font-size: 54px;
+}
+
+.coluna-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.coluna-1 p{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 100;
+}
+
+.coluna-1 h4{
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+button{
+    width: 140px;
+    height: 100px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 20px;
+}
+
+button a:hover{
+    color: #5fba51;
+}
+
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coluna-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: flex-start;
+ }
+
+ .coluna-2 .controller{
+    width: 60%;
+ }
+
+ .color-box{
+    position: absolute;
+    right: 0;
+    top: 35%;
+    background: linear-gradient(#5fba51, #b6ecae);
+    border-radius: 20px 0 0 20px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    transform: translateX(200px);
+ }
+
+ .social-links{
+    text-align: center;
+    background-color:#602d8f;
+	position: absolute;
+    top: 95%;
+	height: 5%;
+    width: 100%;
+	right: 0%;
+    overflow: hidden;
+ }
+
+ #btn_limpar {
+	width: 140px;
+    height: 60px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 20px;
+}
+
+#btn_cadastrar {
+	width: 140px;
+    height: 60px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+<style type="text/CSS">
+    <script language="JavaScript">function Limpar() {
+        document.form_cadastro.txt_gtin.value="";
+        document.form_cadastro.txt_nome.value="";
+        document.form_cadastro.txt_instrucoes.value="";
+        document.form_cadastro.txt_dosagem.value="";
+        document.form_cadastro.txt_preco.value="";
+        document.form_cadastro.txt_quantidade.value="";
+        document.form_cadastro.txt_gtin.focus();
+    }
+</script>
+</style>

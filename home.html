@@ -1,0 +1,113 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Viva Bem </title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+	<center><br><br><br><br><br><br>
+	<font color='#602d8f'><b><center>
+	<br><h1> SEJA BEM VINDO(A) À SUA FARMÁCIA FAVORITA! </h1><br></font></b>
+	<font color='black' size='5'><b><center>
+	Destaques da semana:</b>
+	<center><br>
+	<center>
+	<table>
+	<table border="0">
+		<tr>
+			<th colspan='2'><font color='black' size='5'><b><center>ALLEGRA</th></b></font> 		 
+			<th colspan='2'><font color='black' size='5'><b><center>PARACETAMOL</th></b></font> 
+			<th colspan='2'><font color='black' size='5'><b><center>DIPIRONA</th></b></font> 
+		<tr>
+			<td><center><a href="allegra.html"><img src="imagens/allegra.png" alt="Allegra" height="250" width='250' class="center"></a></td>
+			<td colspan='2'><center><a href="paracetamol.html"><img src="imagens/paracetamol.png" alt="Paracetamol" height="250" width='250' class="center"></a></td>
+			<td colspan='2'><center><a href="dipirona.html"><img src="imagens/dipirona.png" alt="Dipirona" height="250" width='340' class="center"></a></td>
+		</tr>
+		<tr> 
+			<td colspan='2'><b><font color='black' size='4.5'><center>Antialérgico 60 Mg 10 Cp</td></b>
+			<td colspan='2'><b><font color='black' size='4.5'><center>Antitérmico 100 Mg 15ml</td></b>
+			<td colspan='2'><b><font color='black' size='4.5'><center>Analgésico 1 Mg 10 Cp</td></b>
+		</tr>
+		<tr>
+			<td colspan='2'><font color='black' size='4.5'><center>R$ 25,90</td>
+			<td colspan='2'><font color='black' size='4.5'><center>R$ 7,49</td>
+			<td colspan='2'><font color='black' size='4.5'><center>R$ 14,49</td>
+		</tr>
+		<tr>
+			<td colspan='2'>&nbsp;</td>
+			<td colspan='2'>&nbsp;</td>
+			<td colspan='2'>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan='2'>&nbsp;</td>
+			<td colspan='2'>&nbsp;</td>
+			<td colspan='2'>&nbsp;</td>
+		</tr>
+		<tr>
+			<th colspan='2'><font color='black' size='5'><b><center>IBUPROFENO</th></b></font>
+			<th colspan='2'><font color='black' size='5'><b><center>LORATADINA</th></b></font>
+			<th colspan='2'><font color='black' size='5'><b><center>ENGOV</th></b></font>
+			<tr>
+			<td colspan='2'><center><a href="ibuprofeno.html"><img src="imagens/ibuprofeno.png" alt="Ibuprofeno" height="250" width='200' class="center"></a></td>
+			<td colspan='2'><center><a href="loratadina.html"><img src="imagens/loratadina.png" alt="Loratadina" height="250" width='250' class="center"></a></td>
+			<td colspan='2'><center><a href="engov.html"><img src="imagens/engov.png" alt="Engov" height="250" width='250' class="center"></a></td>
+			</tr>
+			<tr>
+			<td colspan='2'><b><font color='black' size='4.5'><center>Anti-inflamatório 50mg 30ml</td></b></font>
+			<td colspan='2'><b><font color='black' size='4.5'><center>Anti-histamínico 10mg 12 Cp</td></b></font> 
+			<td colspan='2'><b><font color='black' size='4.5'><center>Engov 24 Comprimidos</td> </b></font>
+			</tr>
+			<td colspan='2'><font color='black' size='4.5'><center>R$ 7,69</td>&nbsp;&nbsp;</font>
+			<td colspan='2'><font color='black' size='4.5'><center>R$ 11,75</td></font>
+			<td colspan=''><font color='black' size='4.5'><center>R$ 8,28</td></font>	
+			</tr>
+		</table>
+
+		<div class="chatbot">
+			<a href="chat.html"><img src="imagens/chat.png" class="controller" height="100" widht="100" alt="chat"></a>
+		</div>
+
+		<script>
+		function AddCarrinho(produto, qtd, valor, posicao)
+		{
+			localStorage.setItem("produto" + posicao, produto);
+			localStorage.setItem("qtd" + posicao, qtd);
+			valor = valor * qtd;
+			localStorage.setItem("valor" + posicao, valor);
+			alert("Produto adicionado ao carrinho!");
+		}
+
+		var menuList = document.getElementById("menuList");
+		menuList.style.maxHeight = "0px";
+
+		function togglemenu(){
+			if(menuList.style.maxHeight = "0px")
+			{
+				menuList.style.maxHeight = "130px";
+			}
+			else
+			{
+				menuList.style.maxHeight = "0px";
+			}
+		}
+	</script>
+
+</body>
+</html>

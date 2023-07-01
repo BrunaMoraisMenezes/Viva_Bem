@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Dove - Viva Bem </title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+	<div class="row">
+		<div class="coluna-1">
+			<br><br>
+			<h2>SELEÇÃO DE PRODUTO</h2>
+            <h3>Desodorante Dove — Aerossol Antitranspirante | 150ml</h3>
+            <p>O Desodorante Aerosol Dove Original é ideal para o cuidado da pele delicada das axilas, e para a proteção contra a transpiração e o mau odor.</p>
+            <h4>R$ 16,90</h4>
+			<h4>Selecione a quantidade: <input type="number" value="1" min="1" max="10" id="dove"></h4>
+			<br><br>
+            <center><button type="button" id="dove" onclick="AddCarrinho('Desodorante Dove — Aerossol Antitranspirante | 150ml', document.getElementById('dove').value, '16.90', 1)"> ADICIONAR AO CARRINHO</button></center>
+		</div>
+
+		<div class="coluna-2">
+			<img src="imagens/dove.png" class="controller">
+			<div class="color-box"></div>
+		</div> 
+	</div>
+		<div class="social-links"></div>
+</div>
+
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+
+	var menuList = document.getElementById("menuList");
+	menuList.style.maxHeight = "0px";
+
+	function togglemenu(){
+		if(menuList.style.maxHeight = "0px")
+		{
+			menuList.style.maxHeight = "130px";
+		}
+		else
+		{
+			menuList.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+</body>
+</html>

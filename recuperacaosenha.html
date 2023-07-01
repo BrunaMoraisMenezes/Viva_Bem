@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Recuperação de Senha </title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body link=black alink='green' vlink='black'>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+<center><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="recupsenha">
+<form name='recupsenha' action="recupsenha.php" method="POST">
+<font color='#602d8f' size='6'><b><center><br><br>
+<h1>Recuperação de conta</b></font></h1>
+<h2>Altere sua senha</h2>
+<br>
+</center>
+<br>
+
+<font color='black' size='5'>
+	<div id="dadosrecup">
+	<center>
+		E-mail: &nbsp;&nbsp;<br>
+		<input type='text' size='40' maxlength='30' name='txtEmailNovo' id="email">
+		<br>
+		<br>
+		Nova senha:&nbsp;&nbsp;<br> 
+		<input type='password' size='40' maxlength='30' name='txtSenhaNova' id="senha"> 
+		<p><br>
+		<p>
+		<br>
+	</center>
+	</form>
+</div>
+<center>
+	<input type='submit' name="btn_entrar" value='ALTERAR' id='btnEntrar' onclick="document.login.action='recupsenha.php' "> &nbsp;&nbsp;&nbsp;
+	<input type='button' name="btn_entrar" value='VOLTAR' id='btnEntrar' onclick="window.location.href = 'login.html'">
+	
+	</div>
+		<div class="social-links"></div>
+	</div>
+
+	<script>
+	var menuList = document.getElementById("menuList");
+	menuList.style.maxHeight = "0px";
+
+	function togglemenu(){
+		if(menuList.style.maxHeight = "0px")
+		{
+			menuList.style.maxHeight = "130px";
+		}
+		else
+		{
+			menuList.style.maxHeight = "0px";
+		}
+	}
+	</script>
+
+</body>
+</html>

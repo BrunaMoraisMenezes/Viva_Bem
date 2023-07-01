@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Sobre nós</title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body link='black' alink='green' vlink='black'>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+	<br><br><br><br><br><br><br><br><br>
+	<center><font color='#602d8f' size='6'><b>
+	<form name='sobrenos' align='center'><br>
+		<div id='sobrenosdiv'>
+			<font color='#602d8f' size='3'><b><center><br>
+			<h1>SOBRE NÓS</h1></font><br>
+			<font color='black' size='4.5'>
+			<p>Somos uma empresa farmacêutica em busca de levar o melhor conforto para nossos clientes, com uma pitada de modernidade, nossos pedidos são feitos de maneira remota e enviados
+			via delivery para sua residência!</p>
+			
+			<center>
+			<font color='#602d8f' size='5'><br><br>
+			<b>Consulte nossas plataformas para delivery:</b></font>
+			<br><br>
+			<b>Lalamove:</b> <a href='https://www.lalamove.com/pt-br/'>https://www.lalamove.com/pt-br/</a>
+			<br><br>
+			<b>Loggi:</b> <a href='https://www.loggi.com/'>https://www.loggi.com/</a></b>
+			<br><br>
+			<font color='#602d8f' size='5'><b>
+			Sua opinião é importante para nós. ♡ </font><br>
+			<font color='black' size='4'><b>
+			Deixe seu feedback abaixo:</font></b><br>
+			<br>
+			<textarea cols='100' rows='6' placeholder='Digite aqui' id="textarea" name='txta'></textarea> 
+			<br><br>
+			<input type='submit' value='ENVIAR' id='btnEnviar'  onclick="Sobrenos()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='reset' value='LIMPAR' id='btnLimpar'>&nbsp;&nbsp;
+			<br><br>
+			</font>
+		</div>
+		<div class="social-links"></div>
+	</div>
+</div>
+
+
+	<script>
+		var menuList = document.getElementById("menuList");
+		menuList.style.maxHeight = "0px";
+
+		function togglemenu(){
+			if(menuList.style.maxHeight = "0px")
+			{
+				menuList.style.maxHeight = "130px";
+			}
+			else
+			{
+				menuList.style.maxHeight = "0px";
+			}
+		}
+	</script>
+
+</body>
+</html>

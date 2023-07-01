@@ -1,0 +1,102 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Cadastro </title>
+	<link rel="stylesheet" href="css/estilo_cadastro.css">
+</head>
+<body link=black alink='green' vlink='black' Onload="inicio()">
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+<center>
+<br><br><br><br><br><br><br><br>
+<div id="cadastrocli">
+	<br><br><b><font color='#602d8f' size='6' align="center">CADASTRO DE CLIENTES<b>
+	</b>
+	</font>
+	<form name="form1" method="post">
+		<font color='black' size='2'>
+		<h2 align="center">PREENCHA TODOS OS CAMPOS:</h2>  
+		<b>
+			<table border="0" text-align='center' cellpadding="2">
+				<br>
+				<thead>
+				<tr>
+					<th></th>
+				</tr>
+			 </thead>
+			 <tbody>
+				 <tr><td>Nome: <input type='text' size='50' maxlength='30' name='txtNome'placeholder="  Nome completo" id="nome"></td>
+					<tr><td></tr></td>
+					<tr><td></tr></td>
+				 <tr><td>Celular:	<input type='text' size='20' maxlength='11' name='txtCelular' placeholder="  Celular" id="cel"> </td>
+				 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: <input type='text' size='45' maxlength='20' name='txtEmail' placeholder="  E-mail" id="txtEmail"></td></tr>
+				 <tr><td></tr></td>
+				 <tr><td></tr></td>
+				 <tr><td>Senha: <input type='password' size='20' maxlength='20'  name='txtSenha' id="txtSenha"></td>
+				 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirme sua senha: <input type='password' size='25' maxlength='11'  name='txtSenha' id="txtSenha"></td></tr>
+				 <tr><td></tr></td>
+				 <tr><td></tr></td>
+				 <tr><td>Endereço: <input type='text' size='45' maxlength='60' name='txtRua'  placeholder="  Ex.: Rua Aquidabam, 123" id="rua"></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP: <input type='text' size='15' maxlength='9' name='txtCEP' placeholder="  CEP" id="cep"></td></tr>
+					<tr><td></tr></td>
+					<tr><td></tr></td>
+				<tr><td colspan='2'>Cidade: 
+					  <select name='cidades' name='slcCidades' id="cidade">
+						  <option value='Escolha' id="escolha"> -- </option>
+						  <option value='SA' id="st andre"> Santo André </option>
+						  <option value='SBC' id="sbc"> São Bernardo do Campo</option>
+						  <option value='SCS' id="scs"> São Caetano do Sul </option>
+						  <option value='MA' id="maua"> Mauá </option> 
+					  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  Bairro: <input type='text' size='35' maxlength='20' name='txtBairro'  placeholder=" Bairro" id="bairro"></td>
+				  </tr>
+			 </tbody>
+			 </table>
+	</form>
+	<br><input type='checkbox' name='alerta' size="3"><font size='4'>Desejo receber alertas de cupons e descontos pelo e-mail.<br></font>
+	<br><br><input type='submit' name="btn_incluir" value=CADASTRAR  id='btnEnviar' onclick="document.form1.action='cadastrocliente.php' ">&nbsp;&nbsp;
+		<input type='reset' value='LIMPAR' id='btnLimpar'>
+	</font>
+	<br><a href='login.html' style="text-decoration:none"><font color='black'size='4'>Já possui uma conta? Faça login!</a>	
+		</div>
+	</b>
+	</form> 
+	</p>
+	</center></font>
+
+<div class="social-links"></div>
+</div>
+
+<script>
+var menuList = document.getElementById("menuList");
+menuList.style.maxHeight = "0px";
+
+function togglemenu(){
+	if(menuList.style.maxHeight = "0px")
+	{
+		menuList.style.maxHeight = "130px";
+	}
+	else
+	{
+		menuList.style.maxHeight = "0px";
+	}
+}
+</script>
+
+</body>
+</html>

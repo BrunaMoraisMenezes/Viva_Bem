@@ -1,0 +1,320 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Medicamentos </title>
+	<link rel="stylesheet" href="css/estilo_medicamentos.css">
+</head>
+<body link=black alink='green' vlink='black'>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+<center><br><br><br><br><br><br><br><br><br><br><br>
+<br>
+<center>
+<div id='genericosprescricao' style:' text-align:justify'>
+<font color='#602d8f' size='6'><b><center><br>
+<h1>GENÉRICOS COM PRESCRIÇÃO MÉDICA<br></font></h1>
+<table border="0" id='gcomreceita' text-align='center' cellpadding="2">
+   <br>
+   <thead>
+   <tr>
+  
+       <th><font size='4'>Nome&nbsp;&nbsp;</th>
+       <th><font size='4'>&nbsp;&nbsp;Restrição&nbsp;&nbsp;</th>
+       <th><font size='4'>&nbsp;&nbsp;Validade da Receita&nbsp;&nbsp;</th>
+       <th><font size='4'>&nbsp;&nbsp;Dosagem&nbsp;&nbsp;</th>
+       <th><font size='4'>&nbsp;&nbsp;Preço&nbsp;&nbsp;</th>
+	   <th><font size='4'>Quantidade&nbsp;&nbsp;</th>
+	   <th>  </th>
+   </tr>
+   </thead>
+   <tbody>
+   	<tr>
+         <td colspan='2'>&nbsp;</td>
+         <td colspan='2'>&nbsp;</td>
+         <td colspan='2'>&nbsp;</td>
+       </tr>
+   <tr>
+       <td>Fluoxetina</td>
+       <td>Antidepressivo</td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20ml </td>
+       <td> R$70,00 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd27"> </td>
+		<td><button type="button" id="produto27" onclick="AddCarrinho('Fluoxetina', document.getElementById('qtd27').value, '70.00', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>    
+   </tr>
+   <td> Desvenlafaxina</td> 
+       <td>Antidepressivo</td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;840mg </td>
+       <td> R$47,77 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd28"> </td>
+	   <td><button type="button" id="produto28" onclick="AddCarrinho('Desvenlafaxina', document.getElementById('qtd28').value, '47.77', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button>	</td>    
+   </tr>
+   </tr>
+   <tr>
+       <td>Sertralina</td>
+       <td>Ansiolitico </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50mg </td>
+       <td> R$25,00 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd29"> </td>
+	   <td><button type="button" id="produto29" onclick="AddCarrinho('Sertralina', document.getElementById('qtd29').value, '25.00', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button>	</td>    
+   </tr>
+   </tr>
+   </tbody>
+ <tr>
+       <td>Rivotril</td>
+       <td>Tarja preta</td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês  </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2mg </td>
+       <td> R$25,00 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd30"> </td>
+	   <td><button type="button" id="produto30" onclick="AddCarrinho('Rivotril', document.getElementById('qtd30').value, '25.00', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>    
+   </tr>
+   </tr>
+<tr>
+       <td>Canabidol</td>
+       <td>Tarja preta</td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20mg </td>
+       <td> R$310,00 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd31"> </td>
+	   <td><button type="button" id="produto31" onclick="AddCarrinho('Canabidol', document.getElementById('qtd31').value, '310.00', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>    
+   </tr>
+   </tr>
+<tr>
+       <td>Juvene</td>
+       <td>Tarja preta</td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70mg </td>
+       <td> R$427,00 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd32"> </td>
+	   <td><button type="button" id="produto32" onclick="AddCarrinho('Dipirona', document.getElementById('qtd32').value, '7.49', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>    
+   </tr>
+   </tr>
+<tr>
+       <td>Stavijili</td>
+       <td>Tarja preta</td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100mg </td>
+       <td> R$200,00 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd33"> </td>
+	   <td><button type="button" id="produto33" onclick="AddCarrinho('Dipirona', document.getElementById('qtd33').value, '7.49', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>     
+   </tr>
+   </tr>
+   <tfoot>
+       <td> Sinvastatina </td>
+       <td> Colesterol </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40mg </td>
+       <td> R$33,50 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd34"> </td>
+	   <td><button type="button" id="produto34" onclick="AddCarrinho('Dipirona', document.getElementById('qtd34').value, '7.49', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>   
+   </tr>
+   </tfoot>
+<tfoot>
+       <td> Ezetimiba </td>
+       <td> Colesterol </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,5mg</td>
+       <td> R$43,50 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd35"> </td>
+	   <td><button type="button" id="produto35" onclick="AddCarrinho('Dipirona', document.getElementById('qtd35').value, '7.49', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>     
+   </tr>
+   </tfoot>
+ <tfoot>
+       <td> Atenelol </td>
+       <td> Hipertensão </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25ml </td>
+       <td> R$6,00 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd36"> </td>
+	   <td><button type="button" id="produto36" onclick="AddCarrinho('Atenelol', document.getElementById('qtd36').value, '6.00', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>     
+   </tr>
+   </tfoot>
+<tfoot>
+       <td> Apresolina</td>
+       <td> Hipertensão </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50ml</td>
+       <td> R$7,60 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd37"> </td>
+	   <td><button type="button" id="produto37" onclick="AddCarrinho('Apresolina', document.getElementById('qtd37').value, '7.60', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>  
+   </tr>
+   </tfoot>
+ <tfoot>
+       <td> Levotiroxina </td>
+       <td> Tireóide </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 mês </td>
+       <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50ml</td>
+       <td> R$15,70 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd38"> </td>
+	   <td><button type="button" id="produto38" onclick="AddCarrinho('Levotiroxina', document.getElementById('qtd38').value, '15.70', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>     
+   </tr>
+   </tfoot>
+</table>
+</div>
+
+
+<div id='genericossemprescricao' style:' text-align:justify'>
+<font color='#602d8f' size='6'><br>
+<p><h1> GENÉRICOS SEM PRESCRIÇÃO MÉDICA<br></font></h1>
+<center>
+<table border="0" id='gsemreceita'   text-align='center' cellpadding="2">
+   <thead> 
+   <tr>
+
+       <th colspan=2><font size='4'>Nome &nbsp;&nbsp;&nbsp;&nbsp;</th> 
+       <th colspan=2><font size='4'>Indicação &nbsp;&nbsp;&nbsp;&nbsp;</th> 
+       <th colspan=2><font size='4'>Dosagem &nbsp;&nbsp;&nbsp;&nbsp;</th>
+       <th colspan=2><font size='4'>Preço &nbsp;&nbsp;&nbsp;&nbsp;</th>
+	   <th><font size='4'>Quantidade&nbsp;&nbsp;</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+      <td colspan='2'>&nbsp;</td>
+      <td colspan='2'>&nbsp;</td>
+      <td colspan='2'>&nbsp;</td>
+   </tr>
+   <tr>
+       <td colspan=2>&nbsp;&nbsp;Acebrofilina</td> 
+       <td colspan=2>&nbsp;&nbsp;Antibiótico</td>
+       <td colspan=2>&nbsp;&nbsp;&nbsp;&nbsp; 5ml  </td> 
+       <td colspan=2> R$ 22,50 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd39"> </td>
+	   <td><button type="button" id="produto39" onclick="AddCarrinho('Acebrofilina', document.getElementById('qtd39').value, '22.50', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+</tr>
+<tbody>
+   <tr>
+       <td colspan=2>&nbsp;&nbsp;Betametasona</td>
+       <td colspan=2>&nbsp;&nbsp;Corticóide</td>
+       <td colspan=2> &nbsp;&nbsp;&nbsp;&nbsp; 0.5mg  </td> 
+       <td colspan=2> R$ 14,39 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd40"> </td>
+	   <td><button type="button" id="produto40" onclick="AddCarrinho('Betametasona', document.getElementById('qtd40').value, '14.39', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+</tr>
+ <tr>
+       <td colspan=2>&nbsp;&nbsp;Loratadina</td>
+       <td colspan=2>&nbsp;&nbsp;Antialérgico</td>
+       <td colspan=2>  &nbsp;&nbsp;&nbsp;&nbsp;1ml</td>
+       <td colspan=2> R$ 13,90</td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd41"> </td>
+	   <td><button type="button" id="produto41" onclick="AddCarrinho('Lorataina', document.getElementById('qtd41').value, '13.90', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tr>
+<tr>
+       <td colspan=2>&nbsp;&nbsp;Fluconazol</td>
+       <td colspan=2>&nbsp;&nbsp;Antifúngico</td>
+       <td colspan=2> &nbsp;&nbsp;&nbsp;&nbsp; 150mg </td>
+       <td colspan=2> R$ 18,97 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd42"> </td>
+	   <td><button type="button" id="produto42" onclick="AddCarrinho('Fluconazol', document.getElementById('qtd42').value, '18.97', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tr>
+<tr>
+       <td colspan=2>&nbsp;&nbsp;Piroxicam</td>
+       <td colspan=2>&nbsp;&nbsp;Anti-inflamatório</td>
+       <td colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;20mg </td>
+       <td colspan=2> R$ 14,72 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd43"> </td>
+	   <td><button type="button" id="produto43" onclick="AddCarrinho('Piroxicam', document.getElementById('qtd43').value, '14.72', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tr>
+<tr>
+       <td colspan=2>&nbsp;&nbsp;Losartana</td>
+       <td colspan=2>&nbsp;&nbsp;Hipertensão </td> 
+       <td colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;50mg </td>
+       <td colspan=2> R$ 7,49 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd44"> </td>
+	   <td><button type="button" id="produto44" onclick="AddCarrinho('Losartana Pot.', document.getElementById('qtd44').value, '7.49', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tr>
+   <tfoot>
+       <td colspan=2>&nbsp;&nbsp; Buscopan </td>
+       <td colspan=2> &nbsp;&nbsp;Analgésico </td>
+       <td colspan=2> &nbsp;&nbsp;&nbsp;&nbsp;260mg</td>
+       <td colspan=2> R$ 18,32 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd45"> </td>
+	   <td><button type="button" id="produto45" onclick="AddCarrinho('Buscopan', document.getElementById('qtd45').value, '18.32', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tfoot>
+<tfoot>
+       <td colspan=2>&nbsp;&nbsp; Novalgina </td>
+       <td colspan=2>&nbsp;&nbsp; Analgésico </td>
+       <td colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;50mg </td>
+       <td colspan=2> $ 28,12 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd46"> </td>
+	   <td><button type="button" id="produto46" onclick="AddCarrinho('Novalgina', document.getElementById('qtd46').value, '28.12', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tfoot>
+ <tfoot>
+       <td colspan=2>&nbsp;&nbsp; Engov </td>
+       <td colspan=2>&nbsp;&nbsp; Analgésico  </td> 
+       <td colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;150mg</td>
+       <td colspan=2> R$ 8,28 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd47"> </td>
+	   <td><button type="button" id="produto47" onclick="AddCarrinho('Engov', document.getElementById('qtd47').value, '8.28', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+	   
+   </tfoot>
+<tfoot>
+       <td colspan=2>&nbsp;&nbsp; Mebendazol</td>
+       <td colspan=2> &nbsp;&nbsp;Antiparasitário </td>
+       <td colspan=2> &nbsp;&nbsp;&nbsp;&nbsp;20ml</td>
+       <td colspan=2> R$ 4,60 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd48"> </td>
+	   <td><button type="button" id="produto48" onclick="AddCarrinho('Mebendazol', document.getElementById('qtd48').value, '4.60', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tfoot>
+ <tfoot>
+       <td colspan=2>&nbsp;&nbsp; Omeprazol</td>
+       <td colspan=2> &nbsp;&nbsp;Tratamento </td>
+       <td colspan=2> &nbsp;&nbsp;&nbsp;&nbsp;20mg</td>
+       <td colspan=2> R$ 28,85 </td>
+	   <td> <input type="number" value="1" min="1" max="10" id="qtd49"> </td>
+	   <td><button type="button" id="produto49" onclick="AddCarrinho('Omeprazol', document.getElementById('qtd49').value, '28.85', 1)"><a href="carrinho.html" id="SobreNos" style="text-decoration:none"><img src='imagens/carrinho.png' height='30' width='30'></a></button></td>
+   </tr>
+   </tfoot>
+   <br>
+</table>
+   <br><br><br><br>
+   </div>
+</div>
+      <div class="social-links"></div>
+
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+
+	var menuList = document.getElementById("menuList");
+	menuList.style.maxHeight = "0px";
+
+	function togglemenu(){
+		if(menuList.style.maxHeight = "0px")
+		{
+			menuList.style.maxHeight = "130px";
+		}
+		else
+		{
+			menuList.style.maxHeight = "0px";
+		}
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:#602d8f;
+	position: absolute;
+	height: 10%;
+	right: 0%;
+    overflow: hidden;
+}
+
+.logo{
+    width: 280px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: #5fba51;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.row-pagamento{
+    align-items: center;
+    margin: 150px 700px;
+    font-size: 20px;
+}
+
+.row-carrinho{
+    align-items: center;
+    margin: 150px 700px;
+    font-size: 20px;
+}
+
+.coluna-1{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.coluna-1 h2{
+    font-size: 54px;
+}
+
+.coluna-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.coluna-1 p{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 100;
+}
+
+.coluna-1 h4{
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+input[type="number"]{
+    height: 35px;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+button{
+    width: 140px;
+    height: 100px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 20px;
+}
+
+button a:hover{
+    color: #5fba51;
+}
+
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coluna-1::after{
+   content: '';
+   width: 10px;
+   height: 120%;
+   background: linear-gradient(#5fba51, #b6ecae);
+   position: absolute;
+   left: -90px;
+   top: 8px;
+}
+
+.coluna-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: flex-start;
+ }
+
+ .coluna-2 .controller{
+    width: 60%;
+ }
+
+ .color-box{
+    position: absolute;
+    right: 0;
+    top: 35%;
+    background: linear-gradient(#5fba51, #b6ecae);
+    border-radius: 20px 0 0 20px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    transform: translateX(200px);
+ }
+
+ .social-links{
+    text-align: right;
+    background-color:#602d8f;
+	position: absolute;
+    top: 95%;
+	height: 5%;
+    width: 100%;
+	right: 0%;
+    overflow: hidden;
+ }
+
+ .chatbot{
+    text-align: right;
+	position: absolute;
+    top: 90%;
+	height: 10%;
+    width: 100%;
+	right: 0%;
+    overflow: hidden;
+ }
+
+ #divlogin{
+	width: 40%;
+	height: fit-content;
+	border-width: 4px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 6%;
+	box-shadow: 8px 8px lightgreen;
+    background: #e6e1e1;
+}
+
+
+ #pagamento{
+     font-size: 20px;
+     height: 45%;
+     border-width: 4px;
+     border-style: solid;
+     border-color: green;
+     border-radius: 5%;
+     box-shadow: 8px 8px lightgreen;
+     line-height: 2.5;
+     width: 70%; 
+     text-align: left; 
+     right: 0;
+     top: 5%;
+ }
+ 
+#frete{
+     font-size: 15px;
+     height: 45%;
+     border-width: 4px;
+     border-style: solid;
+     border-color: green;
+     border-radius: 5%;
+     box-shadow: 8px 8px lightgreen;
+     line-height: 1.5;
+     width: 70%; 
+     text-align: center; 
+     margin-left: 5%;
+     left: 90%;
+ }
+ 
+ #informacoes1, #informacoes2{
+    margin-left: 10px;
+    text-align: left;
+    margin-left: 5%;
+    color:#602d8f;
+ }
+
+#informacoes1 h3{
+    font-size: 30px;
+    color: #602d8f;
+    font-weight: 100;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+#informacoes2 h3{
+    font-size: 30px;
+    color: #602d8f;
+    font-weight: 100;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+#textarea{
+	resize: none;
+	border-radius: 10px;
+	font: 15px;
+	outline: none;
+}
+
+#sobrenosdiv {
+	width: 60%;
+	height: 65%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 6%;
+	box-shadow: 8px 8px lightgreen;
+	margin-left: 20%;
+	justify-content: center;
+    background: #e6e1e1;
+}
+
+#btnEnviar {
+	width: 140px;
+    height: 80px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 20px;
+}
+
+#btnEnviar:hover { 
+	width: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btnEnviar a:hover{
+    color: #5fba51;
+}
+
+#btnLimpar {
+	width: 140px;
+    height: 80px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 20px;
+}
+
+#btnEntrar {
+	width: 140px;
+    height: 80px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#limparCarrinho {
+	width: 250px;
+    height: 80px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#concluirCarrinho {
+	width: 250px;
+    height: 80px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.coluna-carrinho{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.coluna-carrinho h2{
+    font-size: 54px;
+}
+
+.coluna-carrinho h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.coluna-carrinho p{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 100;
+}
+
+.coluna-carrinho h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.coluna-carrinho::after{
+    content: '';
+    width: 15px;
+    height: 150%;
+    background: linear-gradient(#5fba51, #b6ecae);
+    position: absolute;
+    left: -200px;
+    top: 8px;
+    overflow: hidden;
+ }
+
+ .coluna-pagamento{
+    flex-basis: 40%;
+    position: fixed;
+}
+
+.coluna-pagamento h2{
+    font-size: 40px;
+}
+
+.coluna-pagamento h3{
+    font-size: 20px;
+    color: #707070;
+    font-weight: 100;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.coluna-pagamento p{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 100;
+}
+
+.coluna-pagamento h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.coluna-pagamento::after{
+    content: '';
+    width: 15px;
+    height: 80%;
+    background: linear-gradient(#5fba51, #b6ecae);
+    position: absolute;
+    left: -200px;
+    top: 8px;
+    overflow: hidden;
+ }
+
+ #concluir {
+	width: 140px;
+    height: 80px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: #602d8f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    font-size: 20px;
+}
+
+ #email { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+    border-color: #602d8f;
+}
+
+#email:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+    border-color: #602d8f;
+}
+
+#senha { 
+	background-color: white;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+    border-color: #602d8f;
+}
+
+#senha:hover { 
+	background-color: #ecdaea;
+	border-radius: 20px;
+	height: 30px;
+	border: solid 2px;
+    border-color: #602d8f;
+}
+
+#recupsenha{
+	width: 40%;
+	height: 50%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 6%;
+	box-shadow: 8px 8px lightgreen;
+    text-align: left;
+    background: #e6e1e1;
+}
+
+#dadosrecup{
+    margin-left: 10%;
+}
+
+nav#ajuda{
+	position:right;
+	width:100%;
+	height:5%;
+	line-height: 10px; 
+	top: 5%;
+	left: 0px;
+}
+/* body {
+    height: 200vh;
+    background-image: url(https://web.powerva.microsoft.com/environments/Default-cf72e2bd-7a2b-4783-bdeb-39d57b07f76f/bots/new_bot_705af6132c7749d3b149a1af7386852a/webchat);
+} */
+
+/* .box {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    left: 1rem;
+    top: 1rem;
+    background-color: #f00; */
+
+ @media only screen and (max-width:500px){
+    .logo{
+        width: 130px;
+        top: 0;
+    }
+
+    nav{
+        text-align: right;
+    }
+
+    nav ul{
+        width: 100%;
+        background: #602d8f;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 50px;
+        display: flex;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+       color: #fff;
+       font-size: 10px;
+       text-align: center;
+       line-height: 0;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+        margin: 100px 0;
+    }
+    
+    .coluna-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .coluna-2 .controller{
+        width: 55%;
+    }
+
+    .color-box{
+        transform: translateX(50px);
+    }
+
+    .coluna-1{
+        flex-basis: 100%;
+    }
+
+    .coluna-1 h2{
+        font-size: 25px;
+    }
+
+    .coluna-1 h3{
+        font-size: 20px;
+    }
+
+    .coluna-1 p{
+        font-size: 17px;
+    }
+
+    .coluna-1 h4{
+        font-size: 15px;
+    }
+
+    input[type="number"]{
+        height: 25px;
+        font-size: 15px;
+    }
+    
+    button{
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
+    }
+    
+    button:hover{
+        width: 110px;
+    }
+
+    .social-links{
+        position: fixed;
+        top: 95%;
+        height: 5%;
+        width: 100%;
+        right: 0%;
+        overflow: hidden;
+     }
+ }

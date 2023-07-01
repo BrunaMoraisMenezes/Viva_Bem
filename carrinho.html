@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Carrinho </title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body link='black' alink='green' vlink='black'>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+		<div class="row-carrinho">
+			<div class="coluna-carrinho" id="itens">
+				<br><br>
+				<h2>CARRINHO</h2>
+				<p>Verifique aqui seu carrinho</p>
+				<br><br>
+				<h3>Total: R$ <span id="total"></span></b></h3>
+				<br><br>
+				<h4>Produtos: </h4>
+					<script>
+					 var total = 0; 
+					 var i = 0;    
+					 var valor = 0; 
+					 
+					 for(i=1; i<=99; i++) 
+					 {
+						 var prod = localStorage.getItem("produto" + i + ""); 
+						 if(prod != null) 
+						 {	
+							 document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
+							 document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+							 document.getElementById("itens").innerHTML += " ";
+							 
+							 valor = parseFloat(localStorage.getItem("valor" + i)); 
+							 total = (total + valor); 
+						 }
+					 } 
+					 document.getElementById("total").innerHTML = total.toFixed(2); 
+					</script>
+				</div>
+			<br><br><br>
+			<button id='concluirCarrinho'><a href="login.html" style="text-decoration:none"><font color="white">CONCLUIR PEDIDO</font>  </button>
+			<br><br>
+			<button id='limparCarrinho' onclick="localStorage.clear(); location.reload();"> ESVAZIAR CARRINHO </button> 
+			</div>
+		<div class="social-links"></div>
+			
+			<script>
+				var menuList = document.getElementById("menuList");
+				menuList.style.maxHeight = "0px";
+
+				function togglemenu(){
+					if(menuList.style.maxHeight = "0px")
+					{
+						menuList.style.maxHeight = "130px";
+					}
+					else
+					{
+						menuList.style.maxHeight = "0px";
+					}
+				}
+			</script>
+</body>
+</html>

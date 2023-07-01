@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Johnson's Baby - Viva Bem </title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+	<div class="row">
+		<div class="coluna-1">
+			<br><br>
+			<h2>SELEÇÃO DE PRODUTO</h2>
+            <h3>Johnson's Baby — Shampoo Gotas de Brilho Rosa | 200 ml</h3>
+            <p>O shampoo Johnson Baby gotas de brilho 200 ml oferece cuidado especial para os cabelos dos seus filhos. Com uma fórmula inovadora, com óleo de argan e proteínas da seda, o shampoo deixa o cabelo muito mais bonito e saudável</p>
+            <h4>R$ 10,34</h4>
+			<h4>Selecione a quantidade: <input type="number" value="1" min="1" max="10" id="johnsons"></h4>
+			<br><br>
+            <center><button type="button" id="johnsons" onclick="AddCarrinho('Johnsons Baby — Shampoo Gotas de Brilho Rosa | 200 ml', document.getElementById('johnsons').value, '10.34', 1)"> ADICIONAR AO CARRINHO</button></center>
+		</div>
+
+		<div class="coluna-2">
+			<img src="imagens/johnsons.png" class="controller">
+			<div class="color-box"></div>
+		</div> 
+	</div>
+		<div class="social-links"></div>
+</div>
+
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+
+	var menuList = document.getElementById("menuList");
+	menuList.style.maxHeight = "0px";
+
+	function togglemenu(){
+		if(menuList.style.maxHeight = "0px")
+		{
+			menuList.style.maxHeight = "130px";
+		}
+		else
+		{
+			menuList.style.maxHeight = "0px";
+		}
+	}
+</script>
+
+</body>
+</html>

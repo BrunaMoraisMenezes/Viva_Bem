@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Pagamento </title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+	<div class="row-pagamento">
+		<div class="coluna-pagamento">
+			<h2>PAGAMENTO</h2>
+			<h3>Opções</h3>
+			<p>
+			<input type='checkbox' name='radios' id='boleto' value='boleto'>
+				<b><font color='black' size='5'> Boleto Bancário </b> &nbsp;&nbsp;&nbsp;</font>
+				<br><i> Até 5% de cashback </i><br><br>
+			<input type='radio' name='radios' id='pix'value='pix'><b><font color='black' size='5'>  Pix </b></font>
+				<br><i> 10% de desconto  </i><br><br>
+			
+			<input type='radio' name='radios' id='cartao' value='cartao'><b><font color='black' size='5'>  Cartão </b></font> 
+			<br><i> Até 6x sem juros</i></p><br><br>
+
+			<h3>Frete</h3>
+			<p>
+			<input type='checkbox' name='radios' id='boleto' value='boleto'><b><font color='black' size='5'> Lalamove </b> &nbsp;&nbsp;&nbsp;</font>
+				<br><i> 5 dias úteis </i>&nbsp;&nbsp;&nbsp;<font color='#602d8f'>+ R$ 4,55 </i></font><br><br>
+			
+			<input type='radio' name='radios' id='pix'value='pix'><b><font color='black' size='5'> Loggi </b>&nbsp;&nbsp;&nbsp;</font>
+			<br><i> 7 dias úteis</i>&nbsp;&nbsp;&nbsp;<font color='#602d8f'>+ R$ 3,49 </i></font><br><br><br>
+			<button type="button"><a href="documento/boletovivabem.pdf"  type="application/pdf"  id="concluirPagamento" align='center' style="font-size: 20;color: white; text-decoration:none"><font color='white'>CONCLUIR PEDIDO</font></a></button>
+		</div>
+	</div>
+	<div class="social-links"></div>
+		
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+
+	var menuList = document.getElementById("menuList");
+	menuList.style.maxHeight = "0px";
+
+	function togglemenu(){
+		if(menuList.style.maxHeight = "0px")
+		{
+			menuList.style.maxHeight = "130px";
+		}
+		else
+		{
+			menuList.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+</html>

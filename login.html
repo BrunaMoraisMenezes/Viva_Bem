@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Login </title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body link=black alink='green' vlink='black' Onload="inicio()">
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre  nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+		<center><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div id="divlogin">
+			<form name='login' method="post">
+			<font color='#602d8f' size='6'><b><center><br>
+			<h1>Já é nosso cliente?</b></font></h1>
+			<h2> Entre com sua conta!</h2>
+			<br>
+			<center>
+			<center>
+			<br>
+			
+			<font color='black' size='5'>
+				E-mail: &nbsp;&nbsp;
+				<input type='text' size='35' maxlength='20' name='txtEmail' id="email">
+				<br>
+				<br>
+				Senha:&nbsp;&nbsp; 
+				<input type='password' size='35' maxlength='20' name='txtSenha' id="senha"> 
+				<p>
+					<br>
+					<b><a href='recuperacaosenha.html' style="text-decoration:none" onclick="">Esqueceu a senha? </a>
+				<p><br>
+				<a href='cadastro.html' style="text-decoration:none"> Não possui cadastro? Cadastre-se aqui!</a>	
+				<br>
+				<br>
+				<input type='submit' name="btn_entrar" value='ENTRAR' id='btnEntrar' onclick="document.login.action='logar.php' "> &nbsp;&nbsp;&nbsp;
+				<input type='reset' value='LIMPAR' id='btnLimpar'>&nbsp;&nbsp;
+				<br><br></b>
+			</div>
+			
+	</div>
+		<div class="social-links"></div>
+	</div>
+
+	<script>
+		var menuList = document.getElementById("menuList");
+		menuList.style.maxHeight = "0px";
+
+		function togglemenu(){
+			if(menuList.style.maxHeight = "0px")
+			{
+				menuList.style.maxHeight = "130px";
+			}
+			else
+			{
+				menuList.style.maxHeight = "0px";
+			}
+		}
+	</script>
+
+</body>
+</html>

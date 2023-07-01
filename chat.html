@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Chat</title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body link='black' alink='green' vlink='black'>
+	<div class="container">
+		<div class="navbar">
+			<a href="home.html"><img src="imagens/vivabem.png" class="logo" alt="home"></a>
+			<nav>
+				<ul id="menuList">
+					<li><a href="medicamentos.html">Medicamentos</a></li>
+					<li><a href="cosmeticos.html">Cosméticos</a></li>
+					<li><a href="sobrenos.html">Sobre nós</a></li>
+					<li><a href="carrinho.html">Carrinho</a></li>
+					<li><a href="login.html">Login</a></li>
+		
+				</ul>
+			</nav>
+			<img src="imagens/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+	<br><br><br><br><br><br><br><br><br>
+	<center>
+	<h2><font color='#602d8f'> CONVERSE COM NOSSA ASSISTENTE VIRTUAL </font><h2><br>
+	<iframe src="https://web.powerva.microsoft.com/environments/Default-cf72e2bd-7a2b-4783-bdeb-39d57b07f76f/bots/new_bot_705af6132c7749d3b149a1af7386852a/webchat" frameborder="0" style="width: 70%; height: 70%; background: #e6e1e1;"></iframe>
+		<div class="social-links"></div>
+	</div>
+</div>
+
+	<script>
+		var menuList = document.getElementById("menuList");
+		menuList.style.maxHeight = "0px";
+
+		function togglemenu(){
+			if(menuList.style.maxHeight = "0px")
+			{
+				menuList.style.maxHeight = "130px";
+			}
+			else
+			{
+				menuList.style.maxHeight = "0px";
+			}
+		}
+	</script>
+
+</body>
+</html>
